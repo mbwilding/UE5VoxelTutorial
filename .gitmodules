@@ -1,0 +1,4 @@
+[submodule "Plugins/ALS"]
+	path = Plugins/ALS
+	url = https://github.com/mbwilding/ALS-Refactored.git
+	branch = main
