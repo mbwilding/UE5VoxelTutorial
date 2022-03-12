@@ -2,8 +2,8 @@
 
 
 #include "NaiveChunk.h"
-
 #include "Voxel/Utils/FastNoiseLite.h"
+#include "Voxel/Utils/Constants.h"
 
 void ANaiveChunk::Setup()
 {
@@ -75,7 +75,7 @@ void ANaiveChunk::GenerateMesh()
 					{
 						if (Check(GetPositionInDirection(Direction, Position)))
 						{
-							CreateFace(Direction, Position * 100);
+							CreateFace(Direction, Position * EngineUnits);
 						}
 					}
 				}

@@ -2,10 +2,9 @@
 
 
 #include "ChunkBase.h"
-
 #include "Voxel/Utils/FastNoiseLite.h"
 #include "ProceduralMeshComponent.h"
-
+#include "Voxel/Utils/Constants.h"
 
 // Sets default values
 AChunkBase::AChunkBase()
@@ -48,10 +47,10 @@ void AChunkBase::GenerateHeightMap()
 	switch (GenerationType)
 	{
 	case EGenerationType::GT_3D:
-		Generate3DHeightMap(GetActorLocation() / 100);
+		Generate3DHeightMap(GetActorLocation() / EngineUnits);
 		break;
 	case EGenerationType::GT_2D:
-		Generate2DHeightMap(GetActorLocation() / 100);
+		Generate2DHeightMap(GetActorLocation() / EngineUnits);
 		break;
 	default:
 		throw std::invalid_argument("Invalid Generation Type");

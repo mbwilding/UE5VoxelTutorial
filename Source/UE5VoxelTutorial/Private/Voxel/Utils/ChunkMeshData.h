@@ -7,8 +7,7 @@ USTRUCT()
 struct FChunkMeshData
 {
 	GENERATED_BODY();
-
-public:
+	
 	TArray<FVector> Vertices;
 	TArray<int> Triangles;
 	TArray<FVector> Normals;

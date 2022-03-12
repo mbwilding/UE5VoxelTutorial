@@ -6,9 +6,6 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "VoxelFunctionLibrary.generated.h"
 
-/**
- * 
- */
 UCLASS()
 class UVoxelFunctionLibrary final : public UBlueprintFunctionLibrary
 {

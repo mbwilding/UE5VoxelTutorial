@@ -2,8 +2,8 @@
 
 
 #include "GreedyChunk.h"
-
 #include "Voxel/Utils/FastNoiseLite.h"
+#include "Voxel/Utils/Constants.h"
 
 void AGreedyChunk::Setup()
 {
@@ -200,10 +200,10 @@ void AGreedyChunk::CreateQuad(
 	const auto Color = FColor(96, 35, 115, 255);
 
 	MeshData.Vertices.Append({
-		FVector(V1) * 100,
-		FVector(V2) * 100,
-		FVector(V3) * 100,
-		FVector(V4) * 100
+		FVector(V1) * EngineUnits,
+		FVector(V2) * EngineUnits,
+		FVector(V3) * EngineUnits,
+		FVector(V4) * EngineUnits
 	});
 
 	MeshData.Triangles.Append({

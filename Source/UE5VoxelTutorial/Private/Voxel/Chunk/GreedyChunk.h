@@ -3,10 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-
 #include "ChunkBase.h"
 #include "Voxel/Utils/Enums.h"
-
 #include "GreedyChunk.generated.h"
 
 class FastNoiseLite;

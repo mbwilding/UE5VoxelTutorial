@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-
 #include "ChunkBase.h"
 #include "MarchingChunk.generated.h"
 

@@ -2,9 +2,9 @@
 
 
 #include "ChunkWorld.h"
-
 #include "Voxel/Chunk/ChunkBase.h"
 #include "Kismet/GameplayStatics.h"
+#include "Voxel/Utils/Constants.h"
 
 // Sets default values
 AChunkWorld::AChunkWorld()
@@ -43,7 +43,7 @@ void AChunkWorld::Generate3DWorld()
 			{
 				auto transform = FTransform(
 					FRotator::ZeroRotator,
-					FVector(x * Size * 100, y * Size * 100, z * Size * 100),
+					FVector(x * Size * EngineUnits, y * Size * EngineUnits, z * Size * EngineUnits),
 					FVector::OneVector
 				);
 
@@ -74,7 +74,7 @@ void AChunkWorld::Generate2DWorld()
 		{
 			auto transform = FTransform(
 				FRotator::ZeroRotator,
-				FVector(x * Size * 100, y * Size * 100, 0),
+				FVector(x * Size * EngineUnits, y * Size * EngineUnits, 0),
 				FVector::OneVector
 			);
 
